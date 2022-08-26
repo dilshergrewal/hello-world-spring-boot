@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @EnableAutoConfiguration
 public class Example {
 
-    @GetMapping("example")
+    @RequestMapping("example", method = RequestMethod.GET)
     String home() {
         return "Hello World - v3!";
     }
