@@ -1,3 +1,4 @@
+package com.example.springboottutorial;
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.stereotype.*;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 public class Example {
 
-    @GetMapping(value = "/users")
+    @GetMapping("/users")
     String home() {
         return "Hello World - v3!";
     }
