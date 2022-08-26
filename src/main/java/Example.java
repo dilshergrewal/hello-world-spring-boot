@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 public class Example {
 
-    @GetMapping("/users")
+    @GetMapping("/home")
     String home() {
         return "Hello World - v3!";
     }
